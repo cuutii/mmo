@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MMO. — Elegí una opción</title>
+<meta name="description" content="Elegí si querés ver la página web de MMO o enviar un WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .menu-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; background: var(--bg); }
+  .menu-card { background: #fff; border-radius: 18px; padding: 40px 28px; max-width: 420px; width: 100%; box-shadow: var(--shadow-lg); text-align: center; }
+  .menu-card .brand { font-size: 34px; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+  .menu-card .brand span { color: var(--primary); }
+  .menu-card p { color: #6b7280; margin-bottom: 26px; }
+  .menu-btn { display: block; width: 100%; padding: 16px; margin-bottom: 12px; border-radius: 12px; font-weight: 700; font-size: 16px; text-align: center; transition: transform .2s, box-shadow .2s; }
+  .menu-btn.web { background: var(--dark); color: #fff; }
+  .menu-btn.wa { background: #25D366; color: #fff; }
+  .menu-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+  .menu-foot { margin-top: 18px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="menu-wrap">
+    <div class="menu-card">
+      <div class="brand">MMO<span>.</span></div>
+      <p>¿Qué querés hacer?</p>
+      <a class="menu-btn web" href="https://cuutii.github.io/mmo/">🌐 Ver la página web</a>
+      <a class="menu-btn wa" href="https://wa.me/542966700882" target="_blank" rel="noopener">💬 Enviar WhatsApp</a>
+      <div class="menu-foot">Trámites, planos y documentación</div>
+    </div>
+  </div>
+</body>
+</html>

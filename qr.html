@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MMO. — Códigos QR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .qr-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; background: var(--bg); }
+  .qr-card { background: #fff; border-radius: 18px; padding: 36px 28px; max-width: 760px; width: 100%; box-shadow: var(--shadow-lg); text-align: center; }
+  .qr-card .brand { font-size: 30px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+  .qr-card .brand span { color: var(--primary); }
+  .qr-card p { color: #6b7280; margin-bottom: 24px; }
+  .qr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .qr-item { background: #f8fafc; border-radius: 14px; padding: 20px; }
+  .qr-item img { width: 100%; max-width: 260px; margin: 0 auto 12px; border-radius: 10px; }
+  .qr-item h3 { font-size: 16px; color: var(--dark); margin-bottom: 6px; }
+  .qr-item small { color: var(--muted); font-size: 13px; display: block; margin-bottom: 10px; }
+  .qr-item a { color: var(--primary-dark); font-weight: 600; font-size: 14px; }
+  .qr-foot { margin-top: 22px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="qr-wrap">
+    <div class="qr-card">
+      <div class="brand">MMO<span>.</span></div>
+      <p>Códigos QR para compartir</p>
+      <div class="qr-grid">
+        <div class="qr-item">
+          <img src="qr-pagina.png" alt="QR página web">
+          <h3>QR 1 — Página web</h3>
+          <small>Al escanear, abre la página web de MMO.</small>
+          <a href="qr-pagina.png" download>Descargar QR</a>
+        </div>
+        <div class="qr-item">
+          <img src="qr-menu.png" alt="QR menú elegir">
+          <h3>QR 2 — Elegir opción</h3>
+          <small>Al escanear, permite elegir entre ver la página o enviar WhatsApp.</small>
+          <a href="qr-menu.png" download>Descargar QR</a>
+        </div>
+      </div>
+      <div class="qr-foot">Imprimí o compartí estos códigos. Funcionan en cualquier lector de QR.</div>
+    </div>
+  </div>
+</body>
+</html>
